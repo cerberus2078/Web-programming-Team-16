@@ -69,7 +69,7 @@
                 <a class="nav-link text-white" href="gallery.php">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="services.php">Services</a>
+                <a class="nav-link text-white" href="events.php">Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="contact.php">Contact</a>

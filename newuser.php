@@ -10,8 +10,6 @@ include 'header.php';
     <input type="text" name="email" placeholder="E-mail" required><br><br>
     <input type="text" name="comment" placeholder="Comment" required><br><br>
 
-
-
     <input type="submit" value="Register" name="register">
 
 </form>
@@ -19,5 +17,5 @@ include 'header.php';
 
 
 <?php
-include 'header.php';
+include 'footer.php';
 ?>
