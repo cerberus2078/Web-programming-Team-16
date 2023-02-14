@@ -55,7 +55,7 @@
     
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid col-lg-11 mb-md-0">
-          <a class="navbar-brand" href="main.html" >
+          <a class="navbar-brand" href="index.php" >
           <img src="images/LogoMakr-7qPWOZ.jpg" alt="Website name FestEvent"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
