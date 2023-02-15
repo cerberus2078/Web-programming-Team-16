@@ -1,15 +1,17 @@
 <?php include "header.php" ?>
 
 
-        <style>
-
+  <style>
+      .h1{
+        margin-top:3%;
+        margin-left: 7%;
+      }
       .maindiv{
         width: 90%;
         height: 700px;
         position:relative;
         left: 50%;
         margin-top: 25%;
-        margin-bottom: auto;
         transform: translate(-50%,-50%);
         background-image: url('images/Images/slider1.jpg');
         background-size: 100%,100%;
@@ -21,49 +23,17 @@
         0%{ background-image: url('images/Images/slider1.jpg');}
         35%{ background-image: url('images/Images/slider2.jpg');}
         75%{ background-image: url('images/Images/slider3.webp'); }
-      } 
-
+      }
       
+      .container{
+        margin-top:0%;
+      }
     </style>
   </head>
-
-      <!--Navbar Starts-->
-    
-      <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container-fluid col-lg-11 mb-md-0">
-          <a class="navbar-brand" href="main.html" >
-          <img src="images/LogoMakr-7qPWOZ.jpg" alt="Website name FestEvent"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="contact.html">Contact</a>
-              </li>
-            </ul>
-        </div>
-        </div>
-      </nav>
-      <!--Navbar ends-->
-
-        <h2 class="display-1 text-center">
-          <strong>
-                Gallery
-          </strong>
-        </h2>
+  <div class=".section text-white">
+        <h1 class="text-center">Gallery</h1>
 
         <!--image slider starts-->
-
           <div class="maindiv">
           </div>
         <!--image slider ends-->
@@ -97,6 +67,7 @@
           
         </div>
       </div>
+  </div>
 
       <!--gallery ends-->
       

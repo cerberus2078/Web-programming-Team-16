@@ -1,10 +1,6 @@
 <?php include "header.php" ?>
 
 <style>
-     .contact{
-      color: #fff;
-     }
-
      .p{
       color: #fff;
      }
@@ -27,10 +23,12 @@
      </style>
 
       <!--Contact form starts-->
+      <div class=".section text-white">
+        
     <div class="contact">
     <div class="container">
         <section class="mb-4">
-          <h2 class="h1-responsive font-weight-bold text-center my-5 color:#fff">Contact</h2>
+          <h1 class="text-center">Contact</h1>
           <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within 
             a matter of hours to help you.</p>
     
@@ -118,6 +116,7 @@
             </div>
         </section>
        </div>
+      </div>
       </div>
 
     <!--Contact form ends-->
