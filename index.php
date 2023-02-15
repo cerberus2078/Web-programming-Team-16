@@ -13,7 +13,7 @@
               <div class="text">
                  <h3>Turn your vision into reality</h3>
               
-                <p><a class="btn text-white" href="services.html" role="button">Services</a></p>
+                <p><a class="btn text-white" href="events.php" role="button">Services</a></p>
               </div>
             </div>    
 
@@ -21,7 +21,7 @@
               <div class="text"> 
                  <h3>Unforgettable memories</h3>
               
-               <p><a class="btn text-white" href="gallery.html" role="button">Gallery</a></p>
+               <p><a class="btn text-white" href="gallery.php" role="button">Gallery</a></p>
               </div>
           </div>    
 
@@ -39,7 +39,7 @@
             <div class="text">  
               <h3>Quick and easy way to begin your event journey</h3>
             
-            <p><a class="btn text-white" href="contact.html" role="button">Contact us</a></p>
+            <p><a class="btn text-white" href="contact.php" role="button">Contact us</a></p>
             </div>
         </div>    
 
