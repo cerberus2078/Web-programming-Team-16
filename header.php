@@ -45,7 +45,9 @@
         padding-top: 30px;
         padding-bottom: 30px;
       }
-
+      .block-white{
+        color: rgb(255, 255, 255);
+      }
     </style>
   
   </head>
