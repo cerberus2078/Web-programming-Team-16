@@ -57,6 +57,15 @@
         opacity: 7;
     }
 
+    .error{
+        background: #F2DEDE;
+        color: #A94442;
+        padding: 10px;
+        width: 95%;
+        border-radius: 5px;
+        margin: 20px auto;
+    }
+
 </style>
 
 </head>
@@ -65,6 +74,13 @@
 <div class=".section text-white">    
 <form action="login.php" method="post">
     <h1>Login</h1>
+
+    <?php 
+        if(isset($_GET['error'])){ ?>
+            <p class="error"><?php echo $_GET['error'];?></p>
+
+    <?php } ?>
+
     <label>User Name</label>
     <input type="text" name="uname" placeholder="User Name">
 
