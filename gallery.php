@@ -1,4 +1,5 @@
-<?php include "header.php" ?>
+<?php $title = "Fest Event Gallery "; 
+include "header.php"; ?>
 
 
   <style>

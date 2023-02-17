@@ -1,7 +1,8 @@
-<?php include "header.php" ?>
+<?php $title = "Fest Event Contact";
+ include "header.php"; ?>
 
 <style>
-     .p{
+.p{
       color: #fff;
      }
      .contactform{
@@ -20,15 +21,14 @@
       .btn{
        background-color: #58426e;
      }
-     </style>
+</style>
 
-      <!--Contact form starts-->
-      <div class=".section text-white">
-        
-    <div class="contact">
+<!--Contact form starts-->
+<div class=".section text-white">
+<div class="contact">
     <div class="container">
         <section class="mb-4">
-          <h1 class="text-center">Contact</h1>
+          <h2 class="h1-responsive font-weight-bold text-center my-5 color:#fff">Contact</h2>
           <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within 
             a matter of hours to help you.</p>
     
@@ -117,9 +117,9 @@
         </section>
        </div>
       </div>
-      </div>
+    </div>
 
-    <!--Contact form ends-->
+<!--Contact form ends-->
 
 
 

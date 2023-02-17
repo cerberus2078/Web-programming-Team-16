@@ -1,4 +1,5 @@
-<?php include "header.php" ?>
+<?php $title = "Fest Event";
+ include "header.php"; ?>
 
 <!--Body-->
 <div class="container">

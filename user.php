@@ -1,4 +1,5 @@
-<?php include "header.php" ?>
+<?php $title = "Fest Event User Login";
+include "header.php"; ?>
 
 <style>
     .userbody{
@@ -87,9 +88,9 @@
     <label>Password</label>
     <input type="password" name="password" placeholder="Password"><br><br>
 
+    
+    <button type="submit">New User</button>
     <button type="submit">Login</button>
-
-
 
 
 

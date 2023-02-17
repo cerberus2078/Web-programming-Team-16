@@ -1,4 +1,5 @@
-<?php include "header.php" ?>
+<?php $title = "Fest Event Services";
+ include "header.php"; ?>
 
  <!-- service section starts -->
 

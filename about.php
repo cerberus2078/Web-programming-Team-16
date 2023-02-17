@@ -1,4 +1,5 @@
-<?php include "header.php" ?>
+<?php $title = "Fest Event About";
+ include "header.php"; ?>
 
 <!--About Us Starts-->
 <br>
