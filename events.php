@@ -16,9 +16,13 @@
             There are exhibitor spaces available from small table stands to large spaces to set up your own tent.
             There are also several partnership opportunities.
             For example, see the content cooperation options.</p>
+            
           <h2>Pricing starts from
             <br>1000€ To 1500€</br>
           </h2>
+              <div class="text">
+                <p><a class="btn text-white" href="booking.php" role="button">Book Now</a></p>   
+            </div> 
         </div>
       </div>
       <div class="row py-5">
@@ -36,6 +40,9 @@
           <h2>Pricing starts from
             <br>1999€ To 2499€</br>
           </h2>
+          <div class="text">
+                <p><a class="btn text-white" href="booking.php" role="button">Book Now</a></p>   
+            </div> 
         </div>
         <div class="col-md-4">
           <img src="images/Concert.jpg" class="rounded-circle" alt="Cinque Terre" width="100%">
@@ -58,6 +65,9 @@
           <h2>Pricing starts from
             <br>1399€ To 2199€</br>
           </h2>
+          <div class="text">
+                <p><a class="btn text-white" href="booking.php" role="button">Book Now</a></p>   
+            </div> 
         </div>
       </div>
     </div>
