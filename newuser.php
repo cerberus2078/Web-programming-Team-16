@@ -15,7 +15,7 @@ include 'header.php';
 
     form{
         width: 500px ;
-        height: 700px;
+        height: 850px;
         margin-top: 30px;
         margin-bottom: 30px;
         margin-left: 500px;
@@ -28,7 +28,7 @@ include 'header.php';
     h1{
         text-align: center;
         margin-bottom: 40px;
-        color:#600080;
+        color:rgb(36, 0, 52);
     }
 
     input{
@@ -44,6 +44,7 @@ include 'header.php';
         color:#888;
         font-size:18px;
         padding:10px;
+        padding-top: 5px;
     }
 
     button{
@@ -74,13 +75,18 @@ include 'header.php';
 <div class="text">
 <form method="post" action="">
     <h1>New User</h1>
+
+    <label>First Name</label>
     <input type="text" name="fname" placeholder="First Name" required><br><br>
+    <label>Last Name</label>
     <input type="text" name="lname" placeholder="Last Name" required><br><br>
+    <label>Username</label>
     <input type="text" name="username" placeholder="Username" required><br><br>
+    <label>E-mail</label>
     <input type="text" name="email" placeholder="E-mail" required><br><br>
     
 
-    <input type="submit" value="Register" name="register">
+    <button type="submit">Register</button>
 
 </form>
 </div>
@@ -96,7 +102,7 @@ if (isset($_POST['Submit'])){
     values('$fname', '$lname', '$username', '$email')";
 
     if($conn->query($sql) === TRUE){
-        echo "Your account has been created.";
+        echo "Your account has been successfully created created.";
     }
     else{
         echo "Error:" . $conn->error;
