@@ -1,5 +1,10 @@
 <?php $title = "Fest Event User Login";
-include "header.php"; ?>
+include "header.php"; 
+include "db.php"
+
+$sql = "select * from users";
+
+?>
 
 <style>
     .userbody{
