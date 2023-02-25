@@ -31,7 +31,7 @@ $sql = "select * from users";
     h1{
         text-align: center;
         margin-bottom: 40px;
-        color:#600080;
+        color:rgb(36, 0, 52);
     }
 
     input{
@@ -87,8 +87,8 @@ $sql = "select * from users";
 
     <?php } ?>
 
-    <label>User Name</label>
-    <input type="text" name="uname" placeholder="User Name">
+    <label>Username</label>
+    <input type="text" name="uname" placeholder="Username">
 
     <label>Password</label>
     <input type="password" name="password" placeholder="Password"><br><br>
@@ -106,6 +106,12 @@ $sql = "select * from users";
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> c9319498b5b1d6936f4d49aaac5281db70ed1435
 </form>
 </div>
 </body>
