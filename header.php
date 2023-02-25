@@ -76,7 +76,7 @@
               <li class="nav-item">
                 <a class="nav-link text-white" href="contact.php">Contact</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item dropdown">
                 <a class="nav-link text-white" href="user.php">Login</a>
               </li>
               

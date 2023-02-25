@@ -86,7 +86,7 @@ include 'header.php';
     <input type="text" name="email" placeholder="E-mail" required><br><br>
     
 
-    <button type="submit">Register</button>
+    <button type="submit" value="submit">Register</button>
 
 </form>
 </div>
