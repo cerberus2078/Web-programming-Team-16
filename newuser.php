@@ -73,20 +73,20 @@ include 'header.php';
 </style>
 
 <div class="text">
-<form method="post" action="">
+<form method="post" action="" onsubmit="return crud()" name="yes">
     <h1>New User</h1>
 
     <label>First Name</label>
-    <input type="text" name="fname" placeholder="First Name" required><br><br>
+    <input type="text" name="fname" placeholder="First Name" required onblur="fname()"><br><br>
     <label>Last Name</label>
     <input type="text" name="lname" placeholder="Last Name" required><br><br>
     <label>Username</label>
     <input type="text" name="username" placeholder="Username" required><br><br>
     <label>E-mail</label>
-    <input type="text" name="email" placeholder="E-mail" required><br><br>
+    <input type="text" name="email" placeholder="E-mail" required onblur="email()"><br><br>
     
 
-    <button type="submit" value="submit">Register</button>
+    <input type="submit" value="Register"></input>
 
 </form>
 </div>

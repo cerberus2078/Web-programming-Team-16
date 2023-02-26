@@ -2,7 +2,7 @@
 // Sara's db table
 $servername = "db";
 $username = "festevent";
-$password = "team16";
+$password = "password";
 $dbname = "festevent";
 
 $conn =  new mysqli($servername,$username,$password,$dbname);
