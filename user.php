@@ -1,9 +1,6 @@
 <?php $title = "Fest Event User Login";
 include "header.php"; 
-include "db.php"
-
-$sql = "select * from users";
-
+include "db.php";
 ?>
 
 <style>
@@ -31,7 +28,7 @@ $sql = "select * from users";
     h1{
         text-align: center;
         margin-bottom: 40px;
-        color:rgb(36, 0, 52);
+        color:#600080;
     }
 
     input{
@@ -78,40 +75,21 @@ $sql = "select * from users";
 
 <body class="userbody">
 <div class=".section text-white">    
-<form action="login.php" method="post">
+<form action="#" method="post">
     <h1>Login</h1>
 
-    <?php 
-        if(isset($_GET['error'])){ ?>
-            <p class="error"><?php echo $_GET['error'];?></p>
 
-    <?php } ?>
-
-    <label>Username</label>
-    <input type="text" name="uname" placeholder="Username">
+    <label>User Name</label>
+    <input type="text" name="uname" placeholder="User Name" required>
 
     <label>Password</label>
-    <input type="password" name="password" placeholder="Password"><br><br>
+    <input type="password" name="password" placeholder="Password" required><br><br>
 
     
-    <button type="submit">New User</button>
+    <button type="submit">New User</button> 
     <button type="submit">Login</button>
 
 
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> c9319498b5b1d6936f4d49aaac5281db70ed1435
 </form>
 </div>
 </body>
