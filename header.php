@@ -79,6 +79,9 @@
               <li class="nav-item">
                 <a class="nav-link text-white" href="user.php">Login</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="logoff.php">Log Off</a>
+              </li>
               
             </ul>
         </div>
