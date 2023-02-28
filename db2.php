@@ -1,8 +1,8 @@
 <?php
 $servername = "db";
-$username = "booking";
+$username = "booking1";
 $password = "booking";
-$dbname = "booking";
+$dbname = "booking1";
 
 //creating connection
 $conn =  new mysqli($servername,$username,$password,$dbname);

@@ -36,7 +36,7 @@
 <h1>Fill Your Information</h1>
 
 <div class="contain">
-<form method="post" action="" onsubmit="return crud()" name="event">
+<form method="post" action="">
 <select name="events">
 
 <option velue="Festival"> Festival Events </option>
@@ -76,18 +76,16 @@
     </form>
 </div>
 
-<?php include "footer.php" ?>
+<?php 
 
-<?php
-
-if(isset($_POST["submit"])){
-    $events = $_POST["events"];
-    $fname = $_POST["fname"];
-    $lname = $_POST["lname"];
-    $email = $_POST["email"];
-    $date = $_POST["date"];
+if(isset($_POST ['submit'])){
+    $events = $_POST ['events'];
+    $fname = $_POST ['fname'];
+    $lname = $_POST ['lname'];
+    $email = $_POST ['email'];
+    $date = $_POST ['date'];
     
-    include "db2.php";
+    include "db.php";
     $sql = "insert into booking (events,fname,lname,email,date)
     values ('$events', '$fname', '$lname', '$email', '$date')";
 
@@ -100,4 +98,4 @@ if(isset($_POST["submit"])){
 
 }
 
-?>
+include "footer.php" ?>
