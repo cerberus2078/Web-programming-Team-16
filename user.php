@@ -1,6 +1,44 @@
 <?php $title = "Fest Event User Login";
 include "header.php"; 
-include "db.php";
+
+$servername = "db";
+$username = "team16";
+$password = "team16";
+$dbname = "team16";
+
+//creating connection
+$conn =  new mysqli($servername,$username,$password,$dbname);
+
+//check the connection
+
+if ($conn->connect_error){
+    die("connection failed:".$conn->connect_error);
+}
+
+
+if ($_SERVER["REQUEST_METHOD"]=="POST"){
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    $sql="select * from login where username='".$username."' AND password='".$password."' ";
+    $result=mysqli_query($conn,$sql);
+    $row=mysqli_fetch_array($result);
+
+    if($row["usertype"]=="user"){
+
+        header ("location:events.php");
+
+    }elseif($row["usertype"]=="admin"){
+
+        header ("location:adminhome.php");
+
+    }else{
+
+        echo "username or password incorrect";
+
+    }
+}
+
 ?>
 
 <style>
