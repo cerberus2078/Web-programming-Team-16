@@ -77,7 +77,7 @@
                 <a class="nav-link text-white" href="contact.php">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="user.php">Login</a>
+                <a class="nav-link text-white" href="login.php">Login</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="logoff.php">Log Off</a>
