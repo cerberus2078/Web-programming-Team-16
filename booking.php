@@ -30,6 +30,9 @@
         margin-bottom: 40px;
         color: rgb(255, 255, 255);
     }
+    echo{
+        color: rgb(255, 255, 255);
+    }
     </style>
 
 
@@ -39,9 +42,9 @@
 <form method="post" action="">
 <select name="events">
 
-<option velue="Festival"> Festival Events </option>
-<option velue="Concert"> Concert </option>
-<option velue="Musical"> Musical Events </option>
+<option value="Festival"> Festival </option>
+<option value="Concert"> Concert </option>
+<option value="Musical"> Musical Events </option>
 
 </select>
 
@@ -66,27 +69,27 @@
     <div class="row py-1">
         <div class="col">
             <h6>Book Date</h6>
-            <input type="date" name="date" class="form-control">
+            <input type="date" name="date" min="2023-03-01" class="form-control">
         </div>
     </div>
 
     <div class="col">
-            <input type="submit" value="submit">
+            <input type="submit" value="submit" name="submit">
     </div>
     </form>
 </div>
 
 <?php 
 
-if(isset($_POST ['submit'])){
+if (isset($_POST ['submit'])){
     $events = $_POST ['events'];
     $fname = $_POST ['fname'];
     $lname = $_POST ['lname'];
     $email = $_POST ['email'];
     $date = $_POST ['date'];
     
-    include "db.php";
-    $sql = "insert into booking (events,fname,lname,email,date)
+    include "db2.php";
+    $sql = "insert into bookinginfo (events,fname,lname,email,date)
     values ('$events', '$fname', '$lname', '$email', '$date')";
 
     if ($conn -> query($sql) === TRUE){
