@@ -254,40 +254,58 @@
             </div>
             <div class="contactForm">
                 <h2>Send A Message</h2>
-                <div class="formbox">
+                <form class="formbox" method="POST" name="conform" onsubmit="return crud()">
                     <div class="inputbox w50">
-                        <input class="inputtype" type="text" required>
+                        <input class="inputtype" name="fname" type="text" required>
                         <span class="inputtype">First Name</span>
                     </div>
                     <div class="inputbox w50">
-                        <input class="inputtype" type="text" required>
+                        <input class="inputtype" name="lname" type="text" required>
                         <span class="inputtype">Last Name</span>
                     </div>
                     <div class="inputbox w50">
-                        <input class="inputtype" type="email" required>
+                        <input class="inputtype" name="email" type="email" required>
                         <span class="inputtype">E-mail Address</span>
                     </div>
                     <div class="inputbox w50">
-                        <input class="inputtype" type="text" required>
+                        <input class="inputtype" name="mobno" type="text" required>
                         <span class="inputtype">Mobile Number</span>
                     </div>
                     <div class="inputbox w100">
-                        <textarea class="inputtype" required></textarea>
+                        <textarea class="inputtype" name="message" required></textarea>
                         <span class="inputtype">Write Your Message...</span>
                     </div>
                     <div class="inputbox w100">
-                    <input type="submit" value="Send" >
+                    <input type="submit" name="submit" value="Send" >
                     </div>
-                </div>
+                </form>
             </div>
         </div>
-
-
-
     </section>
 
 
 <!--Contact form ends-->
 
+<?php
+    if(isset($_POST['submit'])){
+        $fname=$_POST['fname'];
+        $lname=$_POST['lname'];
+        $email=$_POST['email'];
+        $mobno=$_POST['mobno'];
+        $message=$_POST['message'];
+        include 'db.php';
+        $sql="insert into contact(fname,lname,email,mobno,message)
+               values('$fname','$lname','$email','$mobno','$message')";
+               
+        if($conn->query($sql)=== TRUE){
+            echo "Your information is added sucessfully";
+        }
+        else{
+            echo "Error:".$conn->error;
+        }
+        
+    }
+
+?>
 
 <?php include "footer.php" ?>

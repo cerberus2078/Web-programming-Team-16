@@ -1,1 +1,13 @@
-<h1>Admin Page</h1>
+<?php
+include "adminheader.php";
+?>
+
+
+<h1>Welcome to Admin Panel...
+
+
+
+
+<?php 
+include "adminfooter.php";
+?>
