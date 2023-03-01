@@ -36,30 +36,30 @@
 <h1>Fill Your Information</h1>
 
 <div class="contain">
-
+<form method="post" action="">
 <select name="events">
 
-<option>Festival Events</option>
-<option>Concert</option>
-<option>Musical Events</option>
+<option velue="Festival"> Festival Events </option>
+<option velue="Concert"> Concert </option>
+<option velue="Musical"> Musical Events </option>
 
 </select>
 
     <div class="row py-3">
         <div class="col">
-            <input type="text" name="fname" required placeholder="First Name" class="form-control">
+            <input type="text" name="fname" required placeholder="First Name" class="form-control" required>
         </div>
      </div>
 
     <div class="row py-3">
         <div class="col">
-            <input type="text" name="lname" required placeholder="Last Name" class="form-control">
+            <input type="text" name="lname" required placeholder="Last Name" class="form-control" required>
         </div>
     </div>
 
     <div class="row py-3">
         <div class="col">
-            <input type="text" name="email" required placeholder="Email_id" class="form-control">
+            <input type="text" name="email" required placeholder="Email_id" class="form-control" required>
         </div>
     </div>
     
@@ -73,8 +73,29 @@
     <div class="col">
             <input type="submit" value="submit">
     </div>
+    </form>
 </div>
 
+<?php 
 
+if(isset($_POST ['submit'])){
+    $events = $_POST ['events'];
+    $fname = $_POST ['fname'];
+    $lname = $_POST ['lname'];
+    $email = $_POST ['email'];
+    $date = $_POST ['date'];
+    
+    include "db.php";
+    $sql = "insert into booking (events,fname,lname,email,date)
+    values ('$events', '$fname', '$lname', '$email', '$date')";
 
-<?php include "footer.php" ?>
+    if ($conn -> query($sql) === TRUE){
+        echo "Your information is added sucessfully";
+    }
+    else{
+        echo "Error:" . $conn->error;
+    }
+
+}
+
+include "footer.php" ?>
