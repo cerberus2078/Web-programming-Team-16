@@ -93,7 +93,7 @@ include "header.php";
     <h1>Login</h1>
 
     <label>User Name</label>
-    <input type="text" name="uname" placeholder="User Name" required>
+    <input type="text" name="username" placeholder="User Name" required>
 
     <label>Password</label>
     <input type="password" name="password" placeholder="Password" required><br><br>
