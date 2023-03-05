@@ -85,7 +85,7 @@ include "header.php";
 
 </style>
 
-</head>
+
 
 <body class="userbody">
 <div class=".section text-white">    
@@ -100,7 +100,7 @@ include "header.php";
 
     
     <a href="newuser.php" class="newbtn">New User</a>
-    <button type="submit">Login</button>
+    <button type="submit" name="submit">Login</button>
 
 
 </form>

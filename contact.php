@@ -149,6 +149,54 @@
         background:#bfafcf;
     }
 
+    .popup{
+        width:400px;
+        background:#fff;
+        border-radius: 6px;
+        position: absolute;
+        top:0;
+        left:50%;
+        transform:translate(-50%,-50%) scale(0.1);
+        text-align: center;
+        padding:0 30px 30px;
+        color:#333;
+        visibility: hidden;
+        transition:transform 0.4s,top 0.4s;
+    }
+    .open-popup{
+        visibility:visible;
+        top:50%;
+        transform:translate(-50%,-50%) scale(1);
+    }
+    .popup img{
+        width:100px;
+        margin-top:-50px;
+        border-radius:50%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .popup h2{
+        font-size:38px;
+        font-weight: 500;
+        margin: 30px 0 10px;
+    }
+    .popup button{
+        width:100%;
+        margin-top:50px;
+        padding:10px 0;
+        background:#6fd649;
+        color:#fff;
+        border:0;
+        outline:none;
+        font-size:18px;
+        border-radius:4px;
+        cursor:pointer;
+        box-shadow: 0 5px 5px rgbargba(0,0,0,0.2);
+    }
+
+
+
+
+
     @media(max-width:1200px){
         .containercont{
             width:90%;
@@ -276,7 +324,13 @@
                         <span class="inputtype">Write Your Message...</span>
                     </div>
                     <div class="inputbox w100">
-                    <input type="submit" name="submit" value="Send" >
+                    <input type="submit" onclick="openPopup()" name="submit" value="Send" >
+                    <div class="popup" id="popup">
+                        <img src="images/tick.png" alt="">
+                        <h2>Thank You!</h2>
+                        <p>Your details are successfully submitted.<br> Thanks!</p>
+                        <button type="button" onclick="closePopup()">OK</button>
+                    </div>
                     </div>
                 </form>
             </div>
@@ -285,6 +339,18 @@
 
 
 <!--Contact form ends-->
+
+<script>
+    let popup=document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+</script>
 
 <?php
     if(isset($_POST['submit'])){
@@ -307,5 +373,6 @@
     }
 
 ?>
+
 
 <?php include "footer.php" ?>
