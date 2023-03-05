@@ -304,7 +304,7 @@
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
                     <script>
                              swal({
-                                    title: "<?php echo"Your information is added sucessfully" ?>",
+                                    title: "<?php echo"Your information is added Sucessfully" ?>",
                                     icon: "success",
                                     button: "OK",
                                 });
@@ -316,13 +316,7 @@
     
         
     }
-
-    
-
 ?>
-
-
-
 
 
 <?php include "footer.php" ?>
