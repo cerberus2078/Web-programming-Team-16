@@ -181,7 +181,7 @@ COMMIT;
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Generation Time: Mar 06, 2023 at 09:25 AM
+-- Generation Time: Mar 06, 2023 at 07:48 PM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.19
 
@@ -219,18 +219,9 @@ CREATE TABLE `bookinginfo` (
 --
 
 INSERT INTO `bookinginfo` (`events`, `fname`, `lname`, `date`, `bookingid`, `email`) VALUES
-('Festival', 'Parth', 'Patel', '2023-03-02', 1, ''),
-('Festival', 'parth', 'Patel', '2023-03-17', 2, ''),
-('Festival', 'Parth', 'patel', '2023-03-22', 3, ''),
-('Festival', 'parth', 'Patel', '2023-03-10', 4, ''),
-('Festival', 'Parth', 'htfh', '2023-03-10', 5, ''),
-('Festival', 'parth', 'Patel', '2023-03-09', 6, ''),
-('Festival', 'parth', 'patel', '2023-03-24', 7, ''),
-('Festival', 'parth', 'Patel', '2023-03-16', 8, ''),
-('Festival', 'parth', 'patel', '2023-03-25', 9, ''),
-('Concert', 'parth', 'patel', '2023-03-02', 10, ''),
-('Festival', 'parth', 'patel', '2023-03-16', 11, ''),
-('Festival', 'nikita', 'solanki', '2023-03-17', 12, 'nikitasolanki@gmail.com');
+('Festival', 'parth', 'patel', '2023-03-15', 17, 'parthpatel1410@gmail.com'),
+('Concert', 'parth', 'wd', '2023-03-22', 21, 'jackpatel5591@gmail.com'),
+('Concert', 'parth', 'zxczxc', '2023-03-03', 25, 'zxczx@asd.com');
 
 --
 -- Indexes for dumped tables
@@ -240,7 +231,8 @@ INSERT INTO `bookinginfo` (`events`, `fname`, `lname`, `date`, `bookingid`, `ema
 -- Indexes for table `bookinginfo`
 --
 ALTER TABLE `bookinginfo`
-  ADD PRIMARY KEY (`bookingid`);
+  ADD PRIMARY KEY (`bookingid`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -250,7 +242,7 @@ ALTER TABLE `bookinginfo`
 -- AUTO_INCREMENT for table `bookinginfo`
 --
 ALTER TABLE `bookinginfo`
-  MODIFY `bookingid` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `bookingid` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
