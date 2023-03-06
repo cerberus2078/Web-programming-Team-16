@@ -56,7 +56,7 @@ if (isset($_POST['submit'])){
     h1{
         text-align: center;
         margin-bottom: 40px;
-        color:#600080;
+        color:#58426e;
     }
 
     input{
@@ -76,7 +76,7 @@ if (isset($_POST['submit'])){
 
     button{
         float:right;
-        background: #555;
+        background: #58426e;
         padding:10px 15px;
         color:#fff;
         border-radius:5px;
@@ -90,7 +90,7 @@ if (isset($_POST['submit'])){
 
     .newbtn{
         float:right;
-        background: #555;
+        background: #58426e;
         padding:10px 15px;
         color:#fff;
         border-radius:5px;

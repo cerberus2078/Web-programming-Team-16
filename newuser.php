@@ -28,7 +28,7 @@ include 'header.php';
     h1{
         text-align: center;
         margin-bottom: 40px;
-        color:rgb(36, 0, 52);
+        color:#58426e;
     }
 
     input{
@@ -49,7 +49,7 @@ include 'header.php';
 
     button{
         float:right;
-        background: #555;
+        background: #58426e;
         padding:10px 15px;
         color:#fff;
         border-radius:5px;
@@ -77,32 +77,29 @@ include 'header.php';
     <h1>New User</h1>
 
     <label>First Name</label>
-    <input type="text" name="fname" placeholder="First Name" required onblur="fname()"><br><br>
+    <input type="text" name="fname" placeholder="First Name" required><br><br>
     <label>Last Name</label>
     <input type="text" name="lname" placeholder="Last Name" required><br><br>
     <label>Username</label>
     <input type="text" name="username" placeholder="Username" required><br><br>
-    <label>Password</label>
-    <input type="password" name="password" placeholder="Password" required><br><br>
     <label>E-mail</label>
-    <input type="text" name="email" placeholder="E-mail" required onblur="email()"><br><br>
+    <input type="text" name="email" placeholder="E-mail" required><br><br>
     
 
-    <input type="submit" name="submit" value="Register"></input>
+    <input type="submit" value="Register"></input>
 
 </form>
 </div>
 
 <?php
-if(isset($_POST['submit'])){
+if (isset($_POST['Submit'])){
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $username = $_POST['username'];
-    $password=$_POST['password'];
     $email = $_POST['email'];
     include 'db.php';
-    $sql = "insert into new_user (fname, lname, username,password, email)
-    values('$fname', '$lname', '$username','$password', '$email')";
+    $sql = "insert into new_user (fname, lname, username, email)
+    values('$fname', '$lname', '$username', '$email')";
 
     if($conn->query($sql) === TRUE){
         echo "Your account has been successfully created.";

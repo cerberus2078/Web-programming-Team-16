@@ -1,15 +1,15 @@
 function crud(){
-    let fname=(document.form1.fname.value).trim();
-    if(fname.length<5){
-        alert("First Name must have at least 5 characters");
+    let password=(document.yes.password.value).trim();
+    if(password.length<8){
+        alert("Password must have at least 8 characters");
         return false;
     }
 }
 
-function fname(){
-    let fname=(document.form1.fname.value).trim();
-    if(fname.length<5){
-        alert("First Name must have at least 5 characters");
+function password(){
+    let password=(document.yes.password.value).trim();
+    if(password.length<8){
+        alert("Password must have at least 8 characters");
         return false;
     }
 }
