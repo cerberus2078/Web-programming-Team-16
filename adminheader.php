@@ -54,5 +54,6 @@
       <a class="nav-link" href="" style="color:#000000" >Gallery Page</a>
       <a class="nav-link" href="" style="color:#000000" >Service Page</a>
       <a class="nav-link" href="admincontact.php" style="color:#000000" >Contact Page</a>
+      <a class="nav-link" href="adminbooking.php" style="color:#000000" >Booking Page</a>
     </div>
     <div class="col-sm-9"> 
