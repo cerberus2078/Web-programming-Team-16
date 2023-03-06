@@ -1,5 +1,5 @@
 <?php
-// Sara's db table
+
 $servername = "db";
 $username = "festevent";
 $password = "password";
