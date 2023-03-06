@@ -172,12 +172,16 @@ COMMIT;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
 
+
+
+
+
 -- phpMyAdmin SQL Dump
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Generation Time: Mar 06, 2023 at 08:44 AM
+-- Generation Time: Mar 06, 2023 at 09:25 AM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.19
 
@@ -191,14 +195,8 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
-
-
-
-
-
-
 --
--- Database: `booking`
+-- Database: `festevent`
 --
 
 -- --------------------------------------------------------
@@ -211,25 +209,28 @@ CREATE TABLE `bookinginfo` (
   `events` varchar(60) NOT NULL,
   `fname` varchar(60) NOT NULL,
   `lname` varchar(60) NOT NULL,
-  `email` varchar(60) NOT NULL,
-  `date` date NOT NULL
+  `date` date NOT NULL,
+  `bookingid` int NOT NULL,
+  `email` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `bookinginfo`
 --
 
-INSERT INTO `bookinginfo` (`events`, `fname`, `lname`, `email`, `date`) VALUES
-('Festival', 'Parth', 'Patel', 'ASDA@ASD.COM', '2023-03-02'),
-('Festival', 'parth', 'Patel', 'asdas@123.com', '2023-03-17'),
-('Festival', 'Parth', 'patel', 'asdcc@gmai.com', '2023-03-22'),
-('Festival', 'parth', 'Patel', 'asdcc@gmail.com', '2023-03-10'),
-('Festival', 'Parth', 'htfh', 'chhayashailav@gmail.com', '2023-03-10'),
-('Festival', 'parth', 'Patel', 'jackpatel5591@gmail.com', '2023-03-09'),
-('Festival', 'parth', 'patel', 'parth.patel@student.hamk.in', '2023-03-24'),
-('Festival', 'parth', 'patel', 'parth22000@student.hamk.fi', '2023-03-25'),
-('Concert', 'parth', 'patel', 'parthpatel1410@gmail.com', '2023-03-02'),
-('Festival', 'parth', 'patel', 'parthpatel1410@yahoo.com', '2023-03-16');
+INSERT INTO `bookinginfo` (`events`, `fname`, `lname`, `date`, `bookingid`, `email`) VALUES
+('Festival', 'Parth', 'Patel', '2023-03-02', 1, ''),
+('Festival', 'parth', 'Patel', '2023-03-17', 2, ''),
+('Festival', 'Parth', 'patel', '2023-03-22', 3, ''),
+('Festival', 'parth', 'Patel', '2023-03-10', 4, ''),
+('Festival', 'Parth', 'htfh', '2023-03-10', 5, ''),
+('Festival', 'parth', 'Patel', '2023-03-09', 6, ''),
+('Festival', 'parth', 'patel', '2023-03-24', 7, ''),
+('Festival', 'parth', 'Patel', '2023-03-16', 8, ''),
+('Festival', 'parth', 'patel', '2023-03-25', 9, ''),
+('Concert', 'parth', 'patel', '2023-03-02', 10, ''),
+('Festival', 'parth', 'patel', '2023-03-16', 11, ''),
+('Festival', 'nikita', 'solanki', '2023-03-17', 12, 'nikitasolanki@gmail.com');
 
 --
 -- Indexes for dumped tables
@@ -239,7 +240,17 @@ INSERT INTO `bookinginfo` (`events`, `fname`, `lname`, `email`, `date`) VALUES
 -- Indexes for table `bookinginfo`
 --
 ALTER TABLE `bookinginfo`
-  ADD PRIMARY KEY (`email`);
+  ADD PRIMARY KEY (`bookingid`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `bookinginfo`
+--
+ALTER TABLE `bookinginfo`
+  MODIFY `bookingid` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
