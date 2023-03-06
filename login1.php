@@ -1,26 +1,10 @@
 <?php
 
-$servername = "db";
-$username = "team16";
-$password = "team16";
-$dbname = "team16";
-
-//creating connection
-$conn =  new mysqli($servername,$username,$password,$dbname);
-
-//check the connection
-
-if ($conn->connect_error){
-    die("connection failed:".$conn->connect_error);
-}
-
-
-
-
 if ($_SERVER["REQUEST_METHOD"]=="POST"){
     $username = $_POST["username"];
     $password = $_POST["password"];
     
+    include 'db.php';
     $sql="select * from login where username='".$username."' AND password='".$password."' ";
     $result=mysqli_query($conn,$sql);
     $row=mysqli_fetch_array($result);

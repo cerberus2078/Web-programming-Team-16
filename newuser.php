@@ -97,7 +97,7 @@ if (isset($_POST['Submit'])){
     $lname = $_POST['lname'];
     $username = $_POST['username'];
     $email = $_POST['email'];
-    include 'db1.php';
+    include 'db.php';
     $sql = "insert into new_user (fname, lname, username, email)
     values('$fname', '$lname', '$username', '$email')";
 
