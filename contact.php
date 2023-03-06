@@ -297,9 +297,15 @@
         $sql="insert into contact(fname,lname,email,mobno,message)
                values('$fname','$lname','$email','$mobno','$message')";
                
-        if($conn->query($sql)=== TRUE){
-            echo "Your information is added sucessfully";
-        }
+        if($conn->query($sql)=== TRUE){   ?>
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script>
+            swal({
+                title: "Sucessfully Added",
+                icon: "success",
+                button: "OK",
+            });</script>
+       <?php }
         else{
             echo "Error:".$conn->error;
         }
