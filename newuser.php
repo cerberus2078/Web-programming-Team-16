@@ -82,6 +82,8 @@ include 'header.php';
     <input type="text" name="lname" placeholder="Last Name" required><br><br>
     <label>Username</label>
     <input type="text" name="username" placeholder="Username" required><br><br>
+    <label>Password</label>
+    <input type="password" name="password" placeholder="Placeword" required><br><br>
     <label>E-mail</label>
     <input type="text" name="email" placeholder="E-mail" required onblur="email()"><br><br>
     

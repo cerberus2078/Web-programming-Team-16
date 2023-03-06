@@ -105,7 +105,7 @@ include "header.php";
 
 </form>
 </div>
-</body>
+
 
 
 <?php
@@ -117,6 +117,7 @@ if (isset($_POST['submit'])){
     $sql="select * from login where username='".$username."' AND password='".$password."' ";
     $result=mysqli_query($conn,$sql);
     $row=mysqli_fetch_array($result);
+    
 
     if($conn->query($sql)=== TRUE){
 
