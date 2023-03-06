@@ -27,7 +27,7 @@ include "header.php";
     h1{
         text-align: center;
         margin-bottom: 40px;
-        color:#600080;
+        color:#58426e;
     }
 
     input{
