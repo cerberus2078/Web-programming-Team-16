@@ -170,3 +170,72 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: db
+-- Generation Time: Mar 06, 2023 at 08:44 AM
+-- Server version: 8.0.31
+-- PHP Version: 8.0.19
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `booking`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bookinginfo`
+--
+
+CREATE TABLE `bookinginfo` (
+  `events` varchar(60) NOT NULL,
+  `fname` varchar(60) NOT NULL,
+  `lname` varchar(60) NOT NULL,
+  `email` varchar(60) NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `bookinginfo`
+--
+
+INSERT INTO `bookinginfo` (`events`, `fname`, `lname`, `email`, `date`) VALUES
+('Festival', 'Parth', 'Patel', 'ASDA@ASD.COM', '2023-03-02'),
+('Festival', 'parth', 'Patel', 'asdas@123.com', '2023-03-17'),
+('Festival', 'Parth', 'patel', 'asdcc@gmai.com', '2023-03-22'),
+('Festival', 'parth', 'Patel', 'asdcc@gmail.com', '2023-03-10'),
+('Festival', 'Parth', 'htfh', 'chhayashailav@gmail.com', '2023-03-10'),
+('Festival', 'parth', 'Patel', 'jackpatel5591@gmail.com', '2023-03-09'),
+('Festival', 'parth', 'patel', 'parth.patel@student.hamk.in', '2023-03-24'),
+('Festival', 'parth', 'patel', 'parth22000@student.hamk.fi', '2023-03-25'),
+('Concert', 'parth', 'patel', 'parthpatel1410@gmail.com', '2023-03-02'),
+('Festival', 'parth', 'patel', 'parthpatel1410@yahoo.com', '2023-03-16');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `bookinginfo`
+--
+ALTER TABLE `bookinginfo`
+  ADD PRIMARY KEY (`email`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
