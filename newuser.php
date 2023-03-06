@@ -88,13 +88,13 @@ include 'header.php';
     <input type="text" name="email" placeholder="E-mail" required><br><br>
     
 
-    <button type="submit">Register</button>
+    <button type="submit" name="submit">Register</button>
 
 </form>
 </div>
 
 <?php
-if (isset($_POST['Submit'])){
+if (isset($_POST['submit'])){
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $username = $_POST['username'];
