@@ -149,6 +149,8 @@
         background:#bfafcf;
     }
 
+    
+
     @media(max-width:1200px){
         .containercont{
             width:90%;
@@ -276,7 +278,8 @@
                         <span class="inputtype">Write Your Message...</span>
                     </div>
                     <div class="inputbox w100">
-                    <input type="submit" name="submit" value="Send" >
+                    <input type="submit" onclick="submit()" name="submit" value="Send" >
+                    
                     </div>
                 </form>
             </div>
@@ -297,15 +300,23 @@
         $sql="insert into contact(fname,lname,email,mobno,message)
                values('$fname','$lname','$email','$mobno','$message')";
                
-        if($conn->query($sql)=== TRUE){
-            echo "Your information is added sucessfully";
-        }
-        else{
-            echo "Error:".$conn->error;
-        }
+        if($conn->query($sql)=== TRUE){  ?>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+                    <script>
+                             swal({
+                                    title: "<?php echo"Your information is added Sucessfully" ?>",
+                                    icon: "success",
+                                    button: "OK",
+                                });
+                    </script>     
+<?php   }
+            else{
+                echo "Error:".$conn->error;
+            }
+    
         
     }
-
 ?>
+
 
 <?php include "footer.php" ?>
