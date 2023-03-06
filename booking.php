@@ -163,7 +163,7 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $date = $_POST['date'];
 
-    include "db2.php";
+    include "db.php";
     $sql = "insert into bookinginfo (events,fname,lname,email,date)
     values ('$events', '$fname', '$lname', '$email', '$date')";
 
