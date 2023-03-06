@@ -15,7 +15,7 @@ include 'header.php';
 
     form{
         width: 500px ;
-        height: 850px;
+        height: 1000px;
         margin-top: 30px;
         margin-bottom: 30px;
         margin-left: 500px;
@@ -82,7 +82,9 @@ include 'header.php';
     <input type="text" name="lname" placeholder="Last Name" required><br><br>
     <label>Username</label>
     <input type="text" name="username" placeholder="Username" required><br><br>
-    <input type="text" name="email" placeholder="E-mail" required onblur="email()"><br><br>
+    <label>Password</label>
+    <input type="password" name="password" placeholder="Password" required onblur="password()"><br><br>
+    <input type="text" name="email" placeholder="E-mail" required ><br><br>
     
 
     <input type="submit" value="Register"></input>
