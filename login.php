@@ -2,6 +2,35 @@
 include "header.php"; 
 ?>
 
+<?php
+if (isset($_POST['submit'])){
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    include "db.php";
+    $sql="select * from new_user where username='".$username."' AND password='".$password."' ";
+    $result=mysqli_query($conn,$sql);
+    $row=mysqli_fetch_array($result);
+
+    if($conn->query($sql)=== TRUE){
+
+         if($row["usertype"]=="user"){
+            header("Location:events.php");
+        }elseif($row["usertype"]=="admin"){
+            header("Location:adminhome.php");
+        }else{
+            echo "username or password incorrect";
+        }
+ 
+    }else{
+        echo "Error:".$conn->error;
+    }
+}
+
+?>
+
+
+
+
 <style>
     .userbody{
         justify-content: center;
@@ -89,7 +118,7 @@ include "header.php";
 
 <body class="userbody">
 <div class=".section text-white">    
-<form action="" method="post">
+<form action="" method="POST">
     <h1>Login</h1>
 
     <label>User Name</label>
@@ -100,38 +129,11 @@ include "header.php";
 
     
     <a href="newuser.php" class="newbtn">New User</a>
-    <button type="submit">Login</button>
+    <button type="submit" name="submit">Login</button>
 
 
 </form>
 </div>
 </body>
 
-
-<?php
-
-if (isset($_POST['submit'])){
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-    include "db.php";
-    $sql="select * from login where username='".$username."' AND password='".$password."' ";
-    $result=mysqli_query($conn,$sql);
-    $row=mysqli_fetch_array($result);
-
-    if($conn->query($sql)=== TRUE){
-
-         if($row["usertype"]=="user"){
-            header("Location:events.php");
-        }elseif($row["usertype"]=="admin"){
-            header("Location:adminhome.php");
-        }else{
-            echo "username or password incorrect";
-        }
- 
-    }else{
-        echo "Error:".$conn->error;
-    }
-}
-
-
- include "footer.php" ?>
+<?php include "footer.php" ?>
