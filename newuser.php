@@ -49,7 +49,7 @@ include 'header.php';
 
     button{
         float:right;
-        background: #555;
+        background: #58426e;
         padding:10px 15px;
         color:#fff;
         border-radius:5px;
@@ -88,7 +88,7 @@ include 'header.php';
     <input type="text" name="email" placeholder="E-mail" required><br><br>
     
 
-    <input type="submit" value="Register"></input>
+    <button type="submit">Register</button>
 
 </form>
 </div>

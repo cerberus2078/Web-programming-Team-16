@@ -47,7 +47,7 @@ include "header.php";
 
     button{
         float:right;
-        background: #555;
+        background: #58426e;
         padding:10px 15px;
         color:#fff;
         border-radius:5px;
@@ -61,7 +61,7 @@ include "header.php";
 
     .newbtn{
         float:right;
-        background: #555;
+        background: #58426e;
         padding:10px 15px;
         color:#fff;
         border-radius:5px;
