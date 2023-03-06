@@ -15,7 +15,7 @@ include 'header.php';
 
     form{
         width: 500px ;
-        height: 850px;
+        height: 1000px;
         margin-top: 30px;
         margin-bottom: 30px;
         margin-left: 500px;
@@ -82,35 +82,36 @@ include 'header.php';
     <input type="text" name="lname" placeholder="Last Name" required><br><br>
     <label>Username</label>
     <input type="text" name="username" placeholder="Username" required><br><br>
+    <label>Password</label>
+    <input type="password" name="password" placeholder="Password" required><br><br>
     <label>E-mail</label>
     <input type="text" name="email" placeholder="E-mail" required onblur="email()"><br><br>
     
 
-    <input type="submit" value="Register"></input>
+    <input type="submit" name="submit" value="Register"></input>
 
 </form>
 </div>
 
 <?php
-if (isset($_POST['Submit'])){
+if (isset($_POST['submit'])){
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $username = $_POST['username'];
+    $password = $_POST['password'];
     $email = $_POST['email'];
     include 'db1.php';
-    $sql = "insert into new_user (fname, lname, username, email)
-    values('$fname', '$lname', '$username', '$email')";
+    $sql = "insert into new_user (fname, lname, username, password, email)
+    values('$fname', '$lname', '$username', '$password', '$email')";
 
     if($conn->query($sql) === TRUE){
-        echo "Your account has been successfully created created.";
+        echo "Your account has been successfully created.";
     }
     else{
         echo "Error:" . $conn->error;
     }
 }
 
-?>
 
-<?php
 include 'footer.php';
 ?>
