@@ -46,7 +46,7 @@ include "adminheader.php";
                 </thead>
                 <tbody>
                     <?php
-                        include "db2.php";
+                        include "db.php";
                         $selectquery = "select * from bookinginfo";
                         $query=mysqli_query($conn,$selectquery);
                         while($res=mysqli_fetch_array($query)){
