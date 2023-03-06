@@ -293,7 +293,7 @@
         $email=$_POST['email'];
         $mobno=$_POST['mobno'];
         $message=$_POST['message'];
-        include 'db1.php';
+        include 'db.php';
         $sql="insert into contact(fname,lname,email,mobno,message)
                values('$fname','$lname','$email','$mobno','$message')";
                
