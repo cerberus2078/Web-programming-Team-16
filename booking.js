@@ -18,10 +18,10 @@ function closeErrorPopup() {
 }
 
 function requiredValidate(event) {
-    
+
     let input = event.target;
-    
-    if(input.value.length === 0) {
+
+    if (input.value.length === 0) {
         alert("This field is required.");
     }
 }
