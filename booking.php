@@ -1,4 +1,5 @@
-<?php include "header.php";
+<?php $title = "Fest Event Booking Service";
+include "header.php";
 ?>
 
 
