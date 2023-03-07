@@ -83,7 +83,7 @@ include 'header.php';
     <label>Username</label>
     <input type="text" name="username" placeholder="Username" required><br><br>
     <label>Password</label>
-    <input type="password" name="password" placeholder="Password" required><br><br>
+    <input type="password" name="password" placeholder="Password" required onblur="password()"><br><br>
     <label>E-mail</label>
     <input type="text" name="email" placeholder="E-mail" required><br><br>
     
