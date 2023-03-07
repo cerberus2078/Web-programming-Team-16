@@ -82,24 +82,27 @@ include 'header.php';
     <input type="text" name="lname" placeholder="Last Name" required><br><br>
     <label>Username</label>
     <input type="text" name="username" placeholder="Username" required><br><br>
+    <label>Password</label>
+    <input type="password" name="password" placeholder="Password" required><br><br>
     <label>E-mail</label>
     <input type="text" name="email" placeholder="E-mail" required><br><br>
     
 
-    <input type="submit" value="Register"></input>
+    <input type="submit" name="submit" value="Register"></input>
 
 </form>
 </div>
 
 <?php
-if (isset($_POST['Submit'])){
+if (isset($_POST['submit'])){
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $username = $_POST['username'];
+    $password = $_POST['password'];
     $email = $_POST['email'];
     include 'db.php';
-    $sql = "insert into new_user (fname, lname, username, email)
-    values('$fname', '$lname', '$username', '$email')";
+    $sql = "insert into new_user (fname, lname, username,password, email)
+    values('$fname', '$lname', '$username','$password','$email')";
 
     if($conn->query($sql) === TRUE){
         echo "Your account has been successfully created.";
