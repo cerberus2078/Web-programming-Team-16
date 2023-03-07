@@ -16,3 +16,12 @@ function closeErrorPopup() {
     let popup = document.getElementById("popup-error");
     popup.classList.remove("open-popup");
 }
+
+function requiredValidate(event) {
+    
+    let input = event.target;
+    
+    if(input.value.length === 0) {
+        alert("This field is required.");
+    }
+}

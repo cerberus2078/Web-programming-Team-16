@@ -343,16 +343,16 @@
                     </select>
                 </div>
                 <div class="inputbox w50">
-                    <input type="text" name="fname" required placeholder="First Name" class="form-control" required>
+                    <input type="text" name="fname" required placeholder="First Name" class="form-control" onblur="requiredValidate(event);" required>
                 </div>
                 <div class="inputbox w50">
-                    <input type="text" name="lname" required placeholder="Last Name" class="form-control" required>
+                    <input type="text" name="lname" required placeholder="Last Name" class="form-control" onblur="requiredValidate(event);" required>
                 </div>
                 <div class="inputbox w50">
-                    <input type="text" name="email" required placeholder="Email_id" class="form-control" required>
+                    <input type="email" name="email" required placeholder="Email_id" class="form-control" onblur="requiredValidate(event);" required>
                 </div>
                 <div class="inputbox w50">
-                    <input type="date" name="date" class="form-control" placeholder="Book date">
+                    <input type="date" name="date" class="form-control" placeholder="Book date" onblur="requiredValidate(event)">
                 </div>
                 <div class="inputbox w100">
                     <input type="submit" name="submit" value="Submit">
