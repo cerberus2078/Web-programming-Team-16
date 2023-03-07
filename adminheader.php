@@ -50,10 +50,7 @@
   <div class="row" style="margin-top: 10px; margin-bottom: 10px; margin-right: 5px;">
     <div class="col-sm-3" style="background-color: rgba(228, 235, 194, 0.353);">
       <h3>All Pages</h3>
-      <a class="nav-link" href="" style="color:#000000" >About Page</a>
-      <a class="nav-link" href="" style="color:#000000" >Gallery Page</a>
-      <a class="nav-link" href="" style="color:#000000" >Service Page</a>
-      <a class="nav-link" href="admincontact.php" style="color:#000000" >Contact Page</a>
       <a class="nav-link" href="adminbooking.php" style="color:#000000" >Booking Page</a>
+      <a class="nav-link" href="admincontact.php" style="color:#000000" >Contact Page</a>
     </div>
     <div class="col-sm-9"> 

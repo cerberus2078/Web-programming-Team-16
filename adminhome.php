@@ -1,4 +1,4 @@
-<?php
+<?php $title = "Admin Panel";
 include "adminheader.php";
 ?>
 

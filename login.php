@@ -13,12 +13,12 @@ if (isset($_POST['submit'])){
 
     if($conn->query($sql)=== TRUE){
 
-         if($row["usertype"]=="user"){
+         if($row['usertype']=='user'){
             header("Location:events.php");
-        }elseif($row["usertype"]=="admin"){
-            header("Location:adminhome.php");
+        }elseif($row['usertype']=='admin'){
+            header("Location:php/adminhome.php");
         }else{
-            echo "username or password incorrect";
+            echo "Username or Password Incorrect";
         }
  
     }else{
