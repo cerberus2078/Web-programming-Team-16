@@ -93,6 +93,7 @@ include 'header.php';
 </form>
 </div>
 
+
 <?php
 if (isset($_POST['submit'])){
     $fname = $_POST['fname'];
@@ -104,12 +105,19 @@ if (isset($_POST['submit'])){
     $sql = "insert into new_user (fname, lname, username,password, email)
     values('$fname', '$lname', '$username','$password','$email')";
 
-    if($conn->query($sql) === TRUE){
-        echo "Your account has been successfully created.";
-    }
+    if($conn->query($sql)=== TRUE){   ?>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script>
+        swal({
+            title: "Sucessfully Added",
+            icon: "success",
+            button: "OK",
+        });</script>
+   <?php }
     else{
-        echo "Error:" . $conn->error;
+        echo "Error:".$conn->error;
     }
+    
 }
 
 ?>
